@@ -126,3 +126,4 @@ with open(nombre_archivo_csv, 'w', newline='', encoding='utf-8') as archivo_csv:
         archivo_csv.write(linea + '\n')
 
 print("finalizado el proceso")
+driver.quit()
