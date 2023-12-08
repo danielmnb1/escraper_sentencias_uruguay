@@ -130,7 +130,7 @@ def ejecutar_script():
         with open(nombre_archivo_csv, 'w', newline='', encoding='utf-8') as archivo_csv:
             for linea in lineas:
                 archivo_csv.write(linea + '\n')
-
+        driver.quit()
         print("finalizado el proceso")
         root.after(0, lambda: [
             messagebox.showinfo("Script finalizado", "El script ha finalizado con éxito."),
