@@ -33,7 +33,7 @@ en el archivo app.py busca las lineas
 <br>
 <br>
 donde pones la fecha de incio y fecha de final para descargar esas sentencias
-<h4>2- hacerlo medante Interfaz </h4>
+<h4>2- hacerlo mediante Interfaz Grafica </h4>
 <br>
 ejecuta el archivo app_gui.py y simplemente pones las dos fechas y darle ejecutar script
 donde pones la fecha de incio y fecha de final para descargar esas sentencias
