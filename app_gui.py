@@ -3,6 +3,7 @@ from tkinter import messagebox
 import threading
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import undetected_chromedriver
 from selenium.webdriver.common.by import By
@@ -25,8 +26,8 @@ def ejecutar_script():
         chrome_options.add_argument('--headless')
 
         # Crea un servicio de Chrome
-        service = Service("C:\\tinder\\chromedriver.exe")
-
+        service = Service(ChromeDriverManager().install())
+        print("abriendo el script")
         # Inicia el navegador Chrome con las opciones y el servicio configurados
         driver = undetected_chromedriver.Chrome(service=service, options=chrome_options)
 
